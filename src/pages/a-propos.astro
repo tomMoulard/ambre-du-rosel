@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
+import profileAltImage from '../../public/images/profile-alt.jpg';
 ---
 
 <Layout
@@ -28,7 +29,7 @@ import { Image } from 'astro:assets';
         <div class="grid md:grid-cols-5 gap-12 mb-16">
           <div class="md:col-span-2">
             <Image
-              src="/images/profile-alt.jpg"
+              src={profileAltImage}
               alt="Maître Ambre Du Rosel De Saint Germain"
               width={600}
               height={800}

@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import { siteConfig } from '../config';
+import profileImage from '../../public/images/profile.jpg';
 ---
 
 <Layout
@@ -38,7 +39,7 @@ import { siteConfig } from '../config';
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <Image
-              src="/images/profile.jpg"
+              src={profileImage}
               alt="Maître Ambre Du Rosel De Saint Germain"
               width={600}
               height={800}
