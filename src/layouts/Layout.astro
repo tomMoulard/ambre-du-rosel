@@ -4,6 +4,9 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import favicon from '../../public/favicon.svg';
+import profileImage from '../../public/images/profile.jpg';
+import { siteConfig } from '../config';
+const baseUrl = import.meta.env.BASE_URL;
 
 interface Props {
   title: string;
@@ -30,22 +33,87 @@ const canonicalURL = canonical || (Astro.site ? new URL(Astro.url.pathname, Astr
         basic: {
           title: title,
           type: 'website',
-          image: '/og-image.jpg',
+          image: profileImage.src,
         },
         optional: {
           description: description,
-          siteName: 'Cabinet d\'Avocat',
+          siteName: "Cabinet d'Avocat",
         },
       }}
       twitter={{
-        card: 'summary_large_image',
+        cardType: 'summary_large_image',
+        title: title,
+        description: description,
       }}
       extend={{
         meta: [
           { name: 'language', content: 'fr' },
+          { name: 'locale', content: 'fr_FR' },
+          { name: 'keywords', content: "avocat paris, cabinet d'avocats, conseil juridique, droit du travail, droit de la famille, droit des sociétés, avocat france, assistance juridique" },
         ],
       }}
     />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": `${siteConfig.title} - ${siteConfig.name}`,
+      "description": siteConfig.description,
+      "url": baseUrl,
+      "logo": favicon.src,
+      "image": profileImage.src,
+      "telephone": siteConfig.contact.phone,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": siteConfig.contact.address.street,
+        "addressLocality": siteConfig.contact.address.city,
+        "postalCode": siteConfig.contact.address.postalCode,
+        "addressCountry": siteConfig.contact.address.country
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "49.025812",
+        "longitude": "2.220962"
+      },
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Île-de-France"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services juridiques",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Droit du travail"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Droit de la famille"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Droit des sociétés"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Droit immobilier"
+            }
+          }
+        ]
+      }
+    })}/>
   </head>
   <body class="font-sans text-slate-900 bg-slate-50">
     <Header />
