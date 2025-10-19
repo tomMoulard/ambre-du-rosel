@@ -1,0 +1,63 @@
+---
+import { siteConfig } from '../config';
+---
+
+<footer class="bg-gradient-to-br from-burgundy-950 via-burgundy-900 to-burgundy-950 text-slate-200 py-12 mt-16 border-t-2 border-gold-500">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-serif font-bold text-gold-400 mb-4">{siteConfig.name}</h3>
+        <p class="text-sm leading-relaxed">
+          Avocat au Barreau de Paris<br />
+          Cabinet spécialisé en droit de la famille,<br />
+          droit pénal et droit des sociétés
+        </p>
+      </div>
+      
+      <div>
+        <h3 class="text-xl font-serif font-bold text-gold-400 mb-4">Contact</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`} class="hover:text-gold-400 transition-colors">
+              {siteConfig.contact.phoneFormatted}
+            </a>
+          </li>
+          <li>
+            <a href={`mailto:${siteConfig.contact.email}`} class="hover:text-gold-400 transition-colors">
+              {siteConfig.contact.email}
+            </a>
+          </li>
+          <li class="pt-2">
+            {siteConfig.contact.address.street}<br />
+            {siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}, {siteConfig.contact.address.country}
+          </li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="text-xl font-serif font-bold text-gold-400 mb-4">Horaires</h3>
+        <ul class="space-y-1 text-sm">
+          <li>Lundi - Vendredi: {siteConfig.hours.weekdays}</li>
+          <li>Samedi: {siteConfig.hours.saturday}</li>
+          <li>Dimanche: {siteConfig.hours.sunday}</li>
+        </ul>
+        <div class="mt-4">
+          <a href="/contact" class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 font-semibold px-6 py-2 rounded transition-colors">
+            Prendre rendez-vous
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="border-t border-gold-600/30 mt-8 pt-8 text-center text-sm">
+      <p>
+        &copy; {new Date().getFullYear()} {siteConfig.name} - Tous droits réservés
+      </p>
+      <p class="mt-2">
+        <a href="/mentions-legales" class="hover:text-gold-400 transition-colors">
+          Mentions Légales
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>

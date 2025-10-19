@@ -1,0 +1,226 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+---
+
+<Layout
+  title="À Propos - Maître Ambre Dubois | Parcours & Philosophie"
+  description="Découvrez le parcours professionnel et la philosophie de Maître Ambre Dubois, avocate au Barreau de Paris depuis plus de 15 ans."
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-slate-900 to-burgundy-900 text-white py-16 md:py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">
+          À Propos de <span class="text-gold-400">Maître Dubois</span>
+        </h1>
+        <p class="text-xl text-slate-200">
+          Une avocate engagée au service de vos droits
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-5 gap-12 mb-16">
+          <div class="md:col-span-2">
+            <Image
+              src="/images/profile-alt.jpg"
+              alt="Maître Ambre Dubois"
+              width={600}
+              height={800}
+              class="rounded-lg shadow-2xl w-full"
+              loading="lazy"
+            />
+          </div>
+          <div class="md:col-span-3">
+            <h2 class="text-3xl font-serif font-bold text-slate-900 mb-6">
+              Une passion pour le <span class="text-gold-500">droit</span>
+            </h2>
+            <div class="space-y-4 text-lg text-slate-700 leading-relaxed">
+              <p>
+                Diplômée de l'Université Paris II Panthéon-Assas, j'ai prêté serment au Barreau de Paris en 2008. 
+                Depuis plus de 15 ans, j'exerce avec passion et dévouement, guidée par une conviction profonde : 
+                chaque client mérite une défense d'excellence et un accompagnement humain.
+              </p>
+              <p>
+                Mon parcours m'a conduite à me spécialiser dans trois domaines complémentaires du droit : 
+                le droit de la famille, le droit pénal et le droit des sociétés. Cette expertise diversifiée 
+                me permet d'appréhender les situations juridiques dans leur globalité et d'offrir des solutions 
+                adaptées à chaque problématique.
+              </p>
+              <p>
+                Au fil des années, j'ai eu l'honneur de défendre des centaines de clients, qu'il s'agisse de 
+                particuliers confrontés à des épreuves personnelles ou de dirigeants d'entreprise face à des 
+                enjeux stratégiques complexes. Chaque dossier est pour moi une responsabilité que j'assume 
+                avec rigueur et engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Philosophy Section -->
+        <div class="bg-slate-50 rounded-lg p-8 md:p-12 mb-16">
+          <h2 class="text-3xl font-serif font-bold text-slate-900 mb-8 text-center">
+            Ma <span class="text-gold-500">philosophie</span>
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-10 h-10 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-serif font-bold text-slate-900 mb-3">Éthique</h3>
+              <p class="text-slate-600">
+                Le respect strict de la déontologie et du secret professionnel est au cœur de mon exercice
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-10 h-10 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-serif font-bold text-slate-900 mb-3">Humanité</h3>
+              <p class="text-slate-600">
+                Chaque situation est unique et mérite une approche personnalisée et empathique
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="w-20 h-20 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-10 h-10 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-serif font-bold text-slate-900 mb-3">Excellence</h3>
+              <p class="text-slate-600">
+                La recherche constante de solutions efficaces et d'une défense de qualité supérieure
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education & Experience -->
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+          <div>
+            <h2 class="text-2xl font-serif font-bold text-slate-900 mb-6 border-l-4 border-gold-500 pl-4">
+              Formation
+            </h2>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <span class="text-gold-500 font-bold mr-3">•</span>
+                <div>
+                  <p class="font-semibold text-slate-900">Master 2 Droit Privé Général</p>
+                  <p class="text-slate-600">Université Paris II Panthéon-Assas</p>
+                  <p class="text-sm text-slate-500">2006-2007</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gold-500 font-bold mr-3">•</span>
+                <div>
+                  <p class="font-semibold text-slate-900">CAPA (Certificat d'Aptitude à la Profession d'Avocat)</p>
+                  <p class="text-slate-600">École de Formation du Barreau de Paris (EFB)</p>
+                  <p class="text-sm text-slate-500">2007-2008</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gold-500 font-bold mr-3">•</span>
+                <div>
+                  <p class="font-semibold text-slate-900">Serment au Barreau de Paris</p>
+                  <p class="text-slate-600">Prestation de serment</p>
+                  <p class="text-sm text-slate-500">Décembre 2008</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-serif font-bold text-slate-900 mb-6 border-l-4 border-gold-500 pl-4">
+              Expérience
+            </h2>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <span class="text-gold-500 font-bold mr-3">•</span>
+                <div>
+                  <p class="font-semibold text-slate-900">Cabinet Ambre Dubois</p>
+                  <p class="text-slate-600">Avocate indépendante</p>
+                  <p class="text-sm text-slate-500">2015 - Aujourd'hui</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gold-500 font-bold mr-3">•</span>
+                <div>
+                  <p class="font-semibold text-slate-900">Cabinet Martin & Associés</p>
+                  <p class="text-slate-600">Avocate collaboratrice</p>
+                  <p class="text-sm text-slate-500">2010 - 2015</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gold-500 font-bold mr-3">•</span>
+                <div>
+                  <p class="font-semibold text-slate-900">Cabinet Lefèvre & Partenaires</p>
+                  <p class="text-slate-600">Avocate stagiaire puis collaboratrice</p>
+                  <p class="text-sm text-slate-500">2008 - 2010</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Memberships -->
+        <div class="bg-gradient-to-r from-burgundy-50 to-gold-50 rounded-lg p-8 md:p-12">
+          <h2 class="text-2xl font-serif font-bold text-slate-900 mb-6 text-center">
+            Affiliations professionnelles
+          </h2>
+          <ul class="space-y-3 max-w-2xl mx-auto">
+            <li class="flex items-center">
+              <svg class="w-6 h-6 text-gold-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-slate-700">Membre du Barreau de Paris</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-6 h-6 text-gold-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-slate-700">Association des Avocats en Droit de la Famille</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-6 h-6 text-gold-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-slate-700">Conférence des Avocats Pénalistes</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-6 h-6 text-gold-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-slate-700">Association des Juristes d'Entreprise</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-br from-burgundy-900 via-burgundy-800 to-burgundy-950 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-serif font-bold mb-4">
+          Prêt à défendre vos intérêts ?
+        </h2>
+        <p class="text-xl text-slate-300 mb-8">
+          Contactez-moi pour un premier entretien
+        </p>
+        <a href="/contact" class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+          Prendre rendez-vous
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
