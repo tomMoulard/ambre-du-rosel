@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { siteConfig } from '../config';
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -33,10 +35,10 @@ import Layout from '../layouts/Layout.astro';
           <div class="bg-slate-50 rounded-lg p-6">
             <p class="mb-2"><strong>Maître Ambre Du Rosel De Saint Germain</strong></p>
             <p class="mb-2">Avocat au Barreau de Paris</p>
-            <p class="mb-2">123 Avenue des Champs-Élysées</p>
-            <p class="mb-2">75008 Paris, France</p>
-            <p class="mb-2"><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
-            <p class="mb-2"><strong>Email :</strong> contact@ambre-Du Rosel De Saint Germain.fr</p>
+            <p class="mb-2">{siteConfig.contact.address.street}</p>
+            <p class="mb-2">{siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}, {siteConfig.contact.address.country}</p>
+            <p class="mb-2"><strong>Téléphone :</strong> {siteConfig.contact.phone}</p>
+            <p class="mb-2"><strong>Email :</strong> {siteConfig.contact.email}</p>
           </div>
         </div>
 
@@ -79,10 +81,10 @@ import Layout from '../layouts/Layout.astro';
             Hébergement du site
           </h2>
           <div class="bg-slate-50 rounded-lg p-6">
-            <p class="mb-2"><strong>[Nom de l'hébergeur]</strong></p>
-            <p class="mb-2">[Adresse de l'hébergeur]</p>
-            <p class="mb-2"><strong>Téléphone :</strong> [Numéro de téléphone]</p>
-            <p class="mb-2"><strong>Site web :</strong> <span class="text-gold-600">[URL de l'hébergeur]</span></p>
+            <p class="mb-2"><strong>Tom Moulard</strong></p>
+						<p class="mb-2"><strong>Site web :</strong>
+							<a href="https://tom.moulard.org" class="text-gold-600 hover:text-gold-700">https://tom.moulard.org</a>
+						</p>
           </div>
         </div>
 
@@ -120,7 +122,7 @@ import Layout from '../layouts/Layout.astro';
           </p>
           <p class="text-slate-700 leading-relaxed mb-4">
             Pour exercer vos droits, vous pouvez adresser votre demande par email à :
-            <a href="mailto:contact@ambre-dubois-avocat.fr" class="text-gold-600 hover:text-gold-700">contact@ambre-dubois-avocat.fr</a>
+						<a href=`mailto:${siteConfig.contact.email}` class="text-gold-600 hover:text-gold-700">{siteConfig.contact.email}</a>
             ou par courrier à l'adresse du cabinet.
           </p>
           <p class="text-slate-700 leading-relaxed">
@@ -196,7 +198,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- Back to Home -->
   <section class="py-12 bg-slate-50">
     <div class="container mx-auto px-4 text-center">
-      <a href="/" class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors">
+			<a href=`${baseUrl}` class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors">
         Retour à l'accueil
       </a>
     </div>

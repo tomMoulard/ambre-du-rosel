@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import profileAltImage from '../../public/images/profile-alt.jpg';
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -43,20 +45,20 @@ import profileAltImage from '../../public/images/profile-alt.jpg';
             </h2>
             <div class="space-y-4 text-lg text-slate-700 leading-relaxed">
               <p>
-                Diplômée de l'Université Paris II Panthéon-Assas, j'ai prêté serment au Barreau de Paris en 2008. 
-                Depuis plus de 15 ans, j'exerce avec passion et dévouement, guidée par une conviction profonde : 
+                Diplômée de l'Université Paris II Panthéon-Assas, j'ai prêté serment au Barreau de Paris en 2008.
+                Depuis plus de 15 ans, j'exerce avec passion et dévouement, guidée par une conviction profonde :
                 chaque client mérite une défense d'excellence et un accompagnement humain.
               </p>
               <p>
-                Mon parcours m'a conduite à me spécialiser dans trois domaines complémentaires du droit : 
-                le droit de la famille, le droit pénal et le droit des sociétés. Cette expertise diversifiée 
-                me permet d'appréhender les situations juridiques dans leur globalité et d'offrir des solutions 
+                Mon parcours m'a conduite à me spécialiser dans trois domaines complémentaires du droit :
+                le droit de la famille, le droit pénal et le droit des sociétés. Cette expertise diversifiée
+                me permet d'appréhender les situations juridiques dans leur globalité et d'offrir des solutions
                 adaptées à chaque problématique.
               </p>
               <p>
-                Au fil des années, j'ai eu l'honneur de défendre des centaines de clients, qu'il s'agisse de 
-                particuliers confrontés à des épreuves personnelles ou de dirigeants d'entreprise face à des 
-                enjeux stratégiques complexes. Chaque dossier est pour moi une responsabilité que j'assume 
+                Au fil des années, j'ai eu l'honneur de défendre des centaines de clients, qu'il s'agisse de
+                particuliers confrontés à des épreuves personnelles ou de dirigeants d'entreprise face à des
+                enjeux stratégiques complexes. Chaque dossier est pour moi une responsabilité que j'assume
                 avec rigueur et engagement.
               </p>
             </div>
@@ -218,7 +220,7 @@ import profileAltImage from '../../public/images/profile-alt.jpg';
         <p class="text-xl text-slate-300 mb-8">
           Contactez-moi pour un premier entretien
         </p>
-        <a href="/contact" class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+        <a href={`${baseUrl}contact`} class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
           Prendre rendez-vous
         </a>
       </div>

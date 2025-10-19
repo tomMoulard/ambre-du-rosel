@@ -8,7 +8,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://tommoulard.github.io',
-	base: '/ambre-du-rosel',
+	base: '/ambre-du-rosel/',
   vite: {
     plugins: [tailwindcss()]
   },

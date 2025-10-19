@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import { siteConfig } from '../config';
 import profileImage from '../../public/images/profile.jpg';
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -21,10 +23,10 @@ import profileImage from '../../public/images/profile.jpg';
           Cabinet d'avocat à Paris spécialisé en droit de la famille, droit pénal et droit des sociétés
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact" class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+          <a href={`${baseUrl}contact`} class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
             Prendre rendez-vous
           </a>
-          <a href="/competences" class="inline-block bg-transparent border-2 border-gold-400 hover:bg-gold-400 hover:text-slate-900 text-gold-400 font-bold px-8 py-4 rounded-lg text-lg transition-all">
+          <a href={`${baseUrl}competences`} class="inline-block bg-transparent border-2 border-gold-400 hover:bg-gold-400 hover:text-slate-900 text-gold-400 font-bold px-8 py-4 rounded-lg text-lg transition-all">
             Nos compétences
           </a>
         </div>
@@ -57,7 +59,7 @@ import profileImage from '../../public/images/profile.jpg';
             <p class="text-lg text-slate-700 mb-6 leading-relaxed">
               Mon approche personnalisée garantit un accompagnement adapté à chaque situation, dans le respect de la confidentialité et de la déontologie.
             </p>
-            <a href="/a-propos" class="inline-block text-gold-600 hover:text-gold-700 font-semibold text-lg border-b-2 border-gold-600 hover:border-gold-700 transition-colors">
+            <a href={`${baseUrl}a-propos`} class="inline-block text-gold-600 hover:text-gold-700 font-semibold text-lg border-b-2 border-gold-600 hover:border-gold-700 transition-colors">
               En savoir plus sur mon parcours →
             </a>
           </div>
@@ -166,7 +168,7 @@ import profileImage from '../../public/images/profile.jpg';
         </div>
 
         <div class="text-center mt-12">
-          <a href="/competences" class="inline-block bg-burgundy-800 hover:bg-burgundy-900 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors shadow-lg">
+          <a href={`${baseUrl}competences`} class="inline-block bg-burgundy-800 hover:bg-burgundy-900 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors shadow-lg">
             Découvrir toutes nos compétences
           </a>
         </div>
@@ -248,7 +250,7 @@ import profileImage from '../../public/images/profile.jpg';
           Prenez rendez-vous dès aujourd'hui pour une consultation personnalisée
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact" class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+          <a href={`${baseUrl}contact`} class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
             Prendre rendez-vous en ligne
           </a>
           <a href="tel:+33760303231" class="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all">
