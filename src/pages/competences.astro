@@ -1,5 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import familleImage from '../../public/images/famille.png';
+import penalImage from '../../public/images/penal.png';
+import societeImage from '../../public/images/societe.png';
 
 const baseUrl = import.meta.env.BASE_URL;
 ---
@@ -67,10 +71,13 @@ const baseUrl = import.meta.env.BASE_URL;
             </div>
           </div>
           <div class="order-1 md:order-2">
-            <img
-              src="https://placehold.co/600x700/1e293b/f59e0b?text=Droit+de+la+Famille"
+            <Image
+              src={familleImage}
               alt="Droit de la famille"
+              width={600}
+              height={800}
               class="rounded-lg shadow-xl w-full"
+              loading="lazy"
             />
           </div>
         </div>
@@ -84,10 +91,13 @@ const baseUrl = import.meta.env.BASE_URL;
       <div class="max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <img
-              src="https://placehold.co/600x700/1e293b/f59e0b?text=Droit+P%C3%A9nal"
+            <Image
+              src={penalImage}
               alt="Droit pénal"
+              width={600}
+              height={800}
               class="rounded-lg shadow-xl w-full"
+              loading="lazy"
             />
           </div>
           <div>
@@ -186,10 +196,13 @@ const baseUrl = import.meta.env.BASE_URL;
             </div>
           </div>
           <div class="order-1 md:order-2">
-            <img
-              src="https://placehold.co/600x700/1e293b/f59e0b?text=Droit+des+Soci%C3%A9t%C3%A9s"
+            <Image
+              src={societeImage}
               alt="Droit des sociétés"
+              width={600}
+              height={800}
               class="rounded-lg shadow-xl w-full"
+              loading="lazy"
             />
           </div>
         </div>
