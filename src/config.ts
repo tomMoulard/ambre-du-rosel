@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Maître Ambre Dubois",
+  name: "Maître Ambre Du Rosel De Saint Germain",
   title: "Cabinet d'Avocat",
   description: "Cabinet d'avocat spécialisé en droit de la famille, droit pénal et droit des sociétés",
 
