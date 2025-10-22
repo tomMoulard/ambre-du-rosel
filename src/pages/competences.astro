@@ -11,7 +11,7 @@ const baseUrl = import.meta.env.BASE_URL;
 
 <Layout
   title=`Compétences - Domaines d'expertise juridique | ${siteConfig.name}`
-  description=`Découvrez les domaines d'expertise de ${siteConfig.name} : droit de la famille, droit pénal et droit des sociétés à Paris.`
+  description=`Découvrez les domaines d'expertise de ${siteConfig.name} : droit pénal, droit de la famille, droit des étrangers, DALO et droit civil.`
 >
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-slate-900 to-burgundy-900 text-white py-16 md:py-20">
@@ -37,36 +37,36 @@ const baseUrl = import.meta.env.BASE_URL;
               <span class="text-gold-500">Droit de la famille</span>
             </h2>
             <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-              Le droit de la famille touche aux moments les plus importants et souvent les plus difficiles de votre vie.
-              Je vous accompagne avec sensibilité et professionnalisme dans ces étapes délicates.
+              Le droit de la famille requiert autant de technicité que d'empathie. Chaque dossier est préparé avec
+              une attention particulière pour apaiser les tensions et sécuriser durablement votre situation.
             </p>
             <div class="space-y-4">
               <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Divorce et séparation</h3>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Procédures de divorce et hors divorce</h3>
                 <p class="text-slate-600">
-                  Divorce par consentement mutuel, contentieux, ou pour faute. Liquidation du régime matrimonial
-                  et partage des biens. Prestation compensatoire.
+                  Divorce amiable ou contentieux, séparation de corps, procédure JAF pour les couples non mariés,
+                  liquidation du régime matrimonial et partage des biens.
                 </p>
               </div>
               <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Autorité parentale et garde d'enfants</h3>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Mesures relatives aux enfants</h3>
                 <p class="text-slate-600">
-                  Résidence des enfants, droit de visite et d'hébergement, exercice de l'autorité parentale.
-                  Médiation familiale pour trouver des solutions équilibrées.
+                  Fixation de la résidence, droits de visite et d'hébergement, autorité parentale conjointe ou
+                  exclusive, aménagement des contributions à l'entretien.
                 </p>
               </div>
               <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Pension alimentaire</h3>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Soutien financier et patrimoine</h3>
                 <p class="text-slate-600">
-                  Fixation, révision ou suppression de la pension alimentaire. Obligation alimentaire envers
-                  les ascendants ou descendants.
+                  Calcul et révision des pensions alimentaires, prestations compensatoires, mesures d'urgence
+                  (ordonnances de protection) et répartition des biens.
                 </p>
               </div>
               <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Succession et patrimoine</h3>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Accompagnement humain</h3>
                 <p class="text-slate-600">
-                  Conseil en matière successorale, contestation de testament, partage successoral,
-                  protection des héritiers réservataires.
+                  Préparation des auditions, médiation familiale, coordination avec les professionnels
+                  (notaires, médiateurs, psychologues) pour sécuriser l'accord trouvé.
                 </p>
               </div>
             </div>
@@ -80,6 +80,58 @@ const baseUrl = import.meta.env.BASE_URL;
               class="rounded-lg shadow-xl w-full"
               loading="lazy"
             />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DALO et Droit civil -->
+  <section class="py-16 md:py-24 bg-slate-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
+            DALO & <span class="text-gold-500">Droit civil</span>
+          </h2>
+          <p class="text-lg text-slate-600">
+            Un accompagnement complet pour garantir vos droits fondamentaux au logement et sécuriser vos relations civiles.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-4">Droit au logement opposable (DALO)</h3>
+            <ul class="space-y-3 text-slate-700 leading-relaxed">
+              <li>
+                <span class="text-gold-500 font-bold mr-2">•</span>
+                Analyse de votre situation et constitution d'un dossier complet pour la commission de médiation.
+              </li>
+              <li>
+                <span class="text-gold-500 font-bold mr-2">•</span>
+                Recours devant le tribunal administratif en cas de décision défavorable ou d'absence de relogement.
+              </li>
+              <li>
+                <span class="text-gold-500 font-bold mr-2">•</span>
+                Coordination avec les acteurs sociaux et les bailleurs pour assurer un suivi efficace jusqu'au relogement.
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-4">Droit civil</h3>
+            <ul class="space-y-3 text-slate-700 leading-relaxed">
+              <li>
+                <span class="text-gold-500 font-bold mr-2">•</span>
+                Résolution des litiges contractuels (baux d'habitation, prestations de services, consommation).
+              </li>
+              <li>
+                <span class="text-gold-500 font-bold mr-2">•</span>
+                Actions en responsabilité civile et indemnisation des préjudices.
+              </li>
+              <li>
+                <span class="text-gold-500 font-bold mr-2">•</span>
+                Recouvrement de créances et exécution des décisions de justice sur l'ensemble du territoire.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -106,36 +158,36 @@ const baseUrl = import.meta.env.BASE_URL;
               <span class="text-gold-500">Droit pénal</span>
             </h2>
             <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-              Face à une procédure pénale, vous avez besoin d'une défense solide et réactive.
-              Je mets mon expertise au service de vos droits à chaque étape de la procédure.
+              En tant que membre du groupe de défense pénale et criminelle, j'assure une présence à chaque instant
+              de la procédure : de la garde à vue à l'audience, en passant par les mesures d'enquête et les urgences.
             </p>
             <div class="space-y-4">
               <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Assistance en garde à vue</h3>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Gardes à vue & auditions</h3>
                 <p class="text-slate-600">
-                  Intervention rapide 24h/24 et 7j/7. Présence lors des auditions et conseil sur vos droits.
-                  Protection de vos intérêts dès le début de la procédure.
+                  Assistance de jour comme de nuit lors des gardes à vue, auditions libres, confrontations et mesures
+                  de déferrement, avec préparation aux interrogatoires.
                 </p>
               </div>
               <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Défense devant les tribunaux</h3>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Audience et plaidoirie</h3>
                 <p class="text-slate-600">
-                  Représentation devant le tribunal correctionnel, la cour d'assises, le tribunal de police.
-                  Préparation minutieuse de votre défense et plaidoirie experte.
+                  Défense devant les juridictions pénales (tribunal correctionnel, comparutions immédiates,
+                  cour d'assises, juge d'application des peines) avec une plaidoirie structurée et combative.
                 </p>
               </div>
               <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Constitution de partie civile</h3>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Accompagnement des victimes</h3>
                 <p class="text-slate-600">
-                  Accompagnement des victimes d'infractions pénales. Demande de dommages et intérêts.
-                  Suivi de la procédure jusqu'à l'indemnisation.
+                  Dépôt de plainte, constitution de partie civile, chiffrage des préjudices et suivi de l'indemnisation
+                  devant les commissions et juridictions compétentes.
                 </p>
               </div>
               <div class="border-l-4 border-gold-500 pl-4">
                 <h3 class="font-bold text-xl text-slate-900 mb-2">Infractions traitées</h3>
                 <p class="text-slate-600">
-                  Vol, escroquerie, abus de confiance, violences, conduite sous l'emprise,
-                  infractions routières, diffamation, et bien d'autres.
+                  Violences, infractions routières, stupéfiants, atteintes aux biens, délits financiers ou
+                  cybercriminalité : une défense adaptée à chaque accusation.
                 </p>
               </div>
             </div>
@@ -145,53 +197,46 @@ const baseUrl = import.meta.env.BASE_URL;
     </div>
   </section>
 
-  <!-- Droit des sociétés -->
+  <!-- Droit des étrangers -->
   <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div class="order-2 md:order-1">
             <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
-              <span class="text-gold-500">Droit des sociétés</span>
+              <span class="text-gold-500">Droit des étrangers</span>
             </h2>
             <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-              Entrepreneurs et dirigeants, je vous accompagne dans la vie juridique de votre entreprise,
-              de sa création à sa transmission, en passant par la gestion des contentieux.
+              L'accompagnement en droit des étrangers exige maîtrise des procédures administratives et réactivité
+              face aux délais. Chaque dossier est préparé avec des pièces complètes et un suivi rigoureux jusqu'à la décision.
             </p>
             <div class="space-y-4">
               <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Création et structuration</h3>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Régularisation et titres de séjour</h3>
                 <p class="text-slate-600">
-                  Choix de la forme juridique adaptée (SARL, SAS, SA, etc.). Rédaction des statuts.
-                  Formalités de création. Pactes d'associés.
+                  Constitution de dossiers complets (vie privée et familiale, salarié, étudiant, soins),
+                  dépôt en préfecture et suivi de l'instruction.
                 </p>
               </div>
               <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Vie sociale</h3>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Recours contre décisions défavorables</h3>
                 <p class="text-slate-600">
-                  Modification des statuts, augmentation ou réduction de capital, cession de parts sociales
-                  ou d'actions. Tenue des assemblées générales.
+                  Contestation des obligations de quitter le territoire français (OQTF), refus de séjour,
+                  interdictions de retour et arrêtés préfectoraux.
                 </p>
               </div>
               <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Contrats commerciaux</h3>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Accès à la nationalité française</h3>
                 <p class="text-slate-600">
-                  Rédaction et négociation de contrats commerciaux, baux commerciaux, contrats de distribution,
-                  de franchise, de sous-traitance.
+                  Assistance pour le dépôt de demande, préparation aux entretiens, recours hiérarchiques ou judiciaires
+                  en cas de refus ou ajournement.
                 </p>
               </div>
               <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Contentieux commercial</h3>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Contentieux administratifs</h3>
                 <p class="text-slate-600">
-                  Litiges entre associés, conflits avec des tiers (clients, fournisseurs).
-                  Recouvrement de créances. Représentation devant les tribunaux de commerce.
-                </p>
-              </div>
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Restructuration et transmission</h3>
-                <p class="text-slate-600">
-                  Fusion, scission, apport partiel d'actif. Cession d'entreprise.
-                  Procédures collectives (sauvegarde, redressement, liquidation).
+                  Saisine du tribunal administratif, référés-suspension, coordination avec les associations et
+                  services sociaux pour sécuriser le parcours de régularisation.
                 </p>
               </div>
             </div>
@@ -199,7 +244,7 @@ const baseUrl = import.meta.env.BASE_URL;
           <div class="order-1 md:order-2">
             <Image
               src={societeImage}
-              alt="Droit des sociétés"
+              alt="Droit des étrangers"
               width={600}
               height={800}
               class="rounded-lg shadow-xl w-full"

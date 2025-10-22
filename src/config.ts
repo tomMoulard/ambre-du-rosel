@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Maître Ambre du Rosel de Saint Germain",
   title: "Cabinet d'Avocat",
-  description: "Cabinet d'avocat spécialisé en droit de la famille, droit pénal et droit des sociétés, avocat paris, cabinet d'avocats, conseil juridique, droit du travail, droit de la famille, droit des sociétés, avocat france, assistance juridique",
+  description: "Cabinet d'avocat spécialisé en droit pénal, droit de la famille, droit des étrangers, DALO et droit civil, avocat Val d'Oise, régularisation, OQTF, comparutions immédiates, divorce, logement, contentieux administratifs",
 
   contact: {
     phone: "+33 7 60 30 32 31",

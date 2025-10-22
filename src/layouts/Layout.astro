@@ -49,7 +49,7 @@ const canonicalURL = canonical || (Astro.site ? new URL(Astro.url.pathname, Astr
         meta: [
           { name: 'language', content: 'fr' },
           { name: 'locale', content: 'fr_FR' },
-          { name: 'keywords', content: "avocat paris, cabinet d'avocats, conseil juridique, droit du travail, droit de la famille, droit des sociétés, avocat france, assistance juridique" },
+          { name: 'keywords', content: "avocat val d'oise, avocat taverny, droit pénal, droit de la famille, droit des étrangers, DALO, droit civil, OQTF, comparution immédiate, régularisation séjour" },
         ],
       }}
     />
@@ -87,13 +87,6 @@ const canonicalURL = canonical || (Astro.site ? new URL(Astro.url.pathname, Astr
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Droit du travail"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
               "name": "Droit de la famille"
             }
           },
@@ -101,14 +94,28 @@ const canonicalURL = canonical || (Astro.site ? new URL(Astro.url.pathname, Astr
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Droit des sociétés"
+              "name": "Droit pénal"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Droit immobilier"
+              "name": "Droit des étrangers"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "DALO (Droit au logement opposable)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Droit civil"
             }
           }
         ]
