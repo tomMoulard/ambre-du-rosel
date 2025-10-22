@@ -1,9 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-import familleImage from '../../public/images/famille.png';
-import penalImage from '../../public/images/penal.png';
-import societeImage from '../../public/images/societe.png';
 import { siteConfig } from '../config';
 
 const baseUrl = import.meta.env.BASE_URL;
@@ -27,286 +23,170 @@ const baseUrl = import.meta.env.BASE_URL;
     </div>
   </section>
 
-  <!-- Droit de la famille -->
-  <section class="py-16 md:py-24 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div class="order-2 md:order-1">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
-              <span class="text-gold-500">Droit de la famille</span>
-            </h2>
-            <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-              Le droit de la famille requiert autant de technicité que d'empathie. Chaque dossier est préparé avec
-              une attention particulière pour apaiser les tensions et sécuriser durablement votre situation.
-            </p>
-            <div class="space-y-4">
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Procédures de divorce et hors divorce</h3>
-                <p class="text-slate-600">
-                  Divorce amiable ou contentieux, séparation de corps, procédure JAF pour les couples non mariés,
-                  liquidation du régime matrimonial et partage des biens.
-                </p>
-              </div>
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Mesures relatives aux enfants</h3>
-                <p class="text-slate-600">
-                  Fixation de la résidence, droits de visite et d'hébergement, autorité parentale conjointe ou
-                  exclusive, aménagement des contributions à l'entretien.
-                </p>
-              </div>
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Soutien financier et patrimoine</h3>
-                <p class="text-slate-600">
-                  Calcul et révision des pensions alimentaires, prestations compensatoires, mesures d'urgence
-                  (ordonnances de protection) et répartition des biens.
-                </p>
-              </div>
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Accompagnement humain</h3>
-                <p class="text-slate-600">
-                  Préparation des auditions, médiation familiale, coordination avec les professionnels
-                  (notaires, médiateurs, psychologues) pour sécuriser l'accord trouvé.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="order-1 md:order-2">
-            <Image
-              src={familleImage}
-              alt="Droit de la famille"
-              width={600}
-              height={800}
-              class="rounded-lg shadow-xl w-full"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DALO et Droit civil -->
-  <section class="py-16 md:py-24 bg-slate-50">
-    <div class="container mx-auto px-4">
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
-            DALO & <span class="text-gold-500">Droit civil</span>
-          </h2>
-          <p class="text-lg text-slate-600">
-            Un accompagnement complet pour garantir vos droits fondamentaux au logement et sécuriser vos relations civiles.
-          </p>
-        </div>
-        <div class="grid md:grid-cols-2 gap-12">
-          <div class="bg-white rounded-lg shadow-lg p-8">
-            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-4">Droit au logement opposable (DALO)</h3>
-            <ul class="space-y-3 text-slate-700 leading-relaxed">
-              <li>
-                <span class="text-gold-500 font-bold mr-2">•</span>
-                Analyse de votre situation et constitution d'un dossier complet pour la commission de médiation.
-              </li>
-              <li>
-                <span class="text-gold-500 font-bold mr-2">•</span>
-                Recours devant le tribunal administratif en cas de décision défavorable ou d'absence de relogement.
-              </li>
-              <li>
-                <span class="text-gold-500 font-bold mr-2">•</span>
-                Coordination avec les acteurs sociaux et les bailleurs pour assurer un suivi efficace jusqu'au relogement.
-              </li>
-            </ul>
-          </div>
-          <div class="bg-white rounded-lg shadow-lg p-8">
-            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-4">Droit civil</h3>
-            <ul class="space-y-3 text-slate-700 leading-relaxed">
-              <li>
-                <span class="text-gold-500 font-bold mr-2">•</span>
-                Résolution des litiges contractuels (baux d'habitation, prestations de services, consommation).
-              </li>
-              <li>
-                <span class="text-gold-500 font-bold mr-2">•</span>
-                Actions en responsabilité civile et indemnisation des préjudices.
-              </li>
-              <li>
-                <span class="text-gold-500 font-bold mr-2">•</span>
-                Recouvrement de créances et exécution des décisions de justice sur l'ensemble du territoire.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Droit pénal -->
-  <section class="py-16 md:py-24 bg-slate-50">
+  <section class="py-16 md:py-20 bg-white">
     <div class="container mx-auto px-4">
-      <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div>
-            <Image
-              src={penalImage}
-              alt="Droit pénal"
-              width={600}
-              height={800}
-              class="rounded-lg shadow-xl w-full"
-              loading="lazy"
-            />
-          </div>
-          <div>
-            <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
-              <span class="text-gold-500">Droit pénal</span>
-            </h2>
-            <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-              En tant que membre du groupe de défense pénale et criminelle, j'assure une présence à chaque instant
-              de la procédure : de la garde à vue à l'audience, en passant par les mesures d'enquête et les urgences.
-            </p>
-            <div class="space-y-4">
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Gardes à vue & auditions</h3>
-                <p class="text-slate-600">
-                  Assistance de jour comme de nuit lors des gardes à vue, auditions libres, confrontations et mesures
-                  de déferrement, avec préparation aux interrogatoires.
-                </p>
-              </div>
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Audience et plaidoirie</h3>
-                <p class="text-slate-600">
-                  Défense devant les juridictions pénales (tribunal correctionnel, comparutions immédiates,
-                  cour d'assises, juge d'application des peines) avec une plaidoirie structurée et combative.
-                </p>
-              </div>
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Accompagnement des victimes</h3>
-                <p class="text-slate-600">
-                  Dépôt de plainte, constitution de partie civile, chiffrage des préjudices et suivi de l'indemnisation
-                  devant les commissions et juridictions compétentes.
-                </p>
-              </div>
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Infractions traitées</h3>
-                <p class="text-slate-600">
-                  Violences, infractions routières, stupéfiants, atteintes aux biens, délits financiers ou
-                  cybercriminalité : une défense adaptée à chaque accusation.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
+          <span class="text-gold-500">Droit pénal</span>
+        </h2>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Membre du groupe de défense pénale et criminelle, Me du Rosel de Saint Germain intervient en urgence pour toute situation pénale.
+          Disponibilité 24h/24 en garde à vue, réactivité lors des déferrements ou comparutions immédiates, accompagnement des victimes comme des mis en cause.
+        </p>
+        <ul class="mt-6 space-y-3 text-slate-700 leading-relaxed">
+          <li>
+            <span class="font-semibold text-slate-900">Gardes à vue & auditions :</span>
+            présence dès la première heure, préparation aux interrogatoires, échanges avec la famille.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Audience pénale :</span>
+            défense devant le tribunal correctionnel, la cour d'assises, le juge des enfants ou d'application des peines, demandes d'aménagement de peine.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Urgences criminelles :</span>
+            comparutions immédiates, commissions de discipline en maison d'arrêt, permanences week-end et nuit.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Droits des victimes :</span>
+            dépôt de plainte, constitution de partie civile, chiffrage des préjudices et suivi de l'indemnisation.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Droit de la famille -->
+  <section class="py-16 md:py-20 bg-slate-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
+          <span class="text-gold-500">Droit de la famille</span>
+        </h2>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Le cabinet vous accompagne dans chaque étape familiale avec humanité. L'objectif : sécuriser vos liens et construire des solutions pérennes,
+          qu'elles soient amiables ou judiciaires.
+        </p>
+        <ul class="mt-6 space-y-3 text-slate-700 leading-relaxed">
+          <li>
+            <span class="font-semibold text-slate-900">Procédures de divorce :</span>
+            divorce par consentement mutuel, divorce contentieux, séparation de corps, liquidation du régime matrimonial.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Mesures hors mariage :</span>
+            saisine du juge aux affaires familiales pour les couples non mariés, fixation de la résidence des enfants et des droits de visite.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Protection des enfants :</span>
+            pension alimentaire, autorité parentale conjointe ou exclusive, ordonnances de protection, médiation familiale.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Patrimoine & transmissions :</span>
+            partage de biens, successions conflictuelles, assistance devant notaire.
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- Droit des étrangers -->
-  <section class="py-16 md:py-24 bg-white">
+  <section class="py-16 md:py-20 bg-white">
     <div class="container mx-auto px-4">
-      <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="order-2 md:order-1">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
-              <span class="text-gold-500">Droit des étrangers</span>
-            </h2>
-            <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-              L'accompagnement en droit des étrangers exige maîtrise des procédures administratives et réactivité
-              face aux délais. Chaque dossier est préparé avec des pièces complètes et un suivi rigoureux jusqu'à la décision.
-            </p>
-            <div class="space-y-4">
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Régularisation et titres de séjour</h3>
-                <p class="text-slate-600">
-                  Constitution de dossiers complets (vie privée et familiale, salarié, étudiant, soins),
-                  dépôt en préfecture et suivi de l'instruction.
-                </p>
-              </div>
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Recours contre décisions défavorables</h3>
-                <p class="text-slate-600">
-                  Contestation des obligations de quitter le territoire français (OQTF), refus de séjour,
-                  interdictions de retour et arrêtés préfectoraux.
-                </p>
-              </div>
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Accès à la nationalité française</h3>
-                <p class="text-slate-600">
-                  Assistance pour le dépôt de demande, préparation aux entretiens, recours hiérarchiques ou judiciaires
-                  en cas de refus ou ajournement.
-                </p>
-              </div>
-              <div class="border-l-4 border-gold-500 pl-4">
-                <h3 class="font-bold text-xl text-slate-900 mb-2">Contentieux administratifs</h3>
-                <p class="text-slate-600">
-                  Saisine du tribunal administratif, référés-suspension, coordination avec les associations et
-                  services sociaux pour sécuriser le parcours de régularisation.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="order-1 md:order-2">
-            <Image
-              src={societeImage}
-              alt="Droit des étrangers"
-              width={600}
-              height={800}
-              class="rounded-lg shadow-xl w-full"
-              loading="lazy"
-            />
-          </div>
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
+          <span class="text-gold-500">Droit des étrangers</span>
+        </h2>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Me du Rosel de Saint Germain vous conseille dans vos démarches de séjour et vous assiste face aux refus préfectoraux.
+          Les dossiers sont préparés avec une attention particulière portée aux pièces justificatives et aux délais de recours.
+        </p>
+        <ul class="mt-6 space-y-3 text-slate-700 leading-relaxed">
+          <li>
+            <span class="font-semibold text-slate-900">Régularisations & titres :</span>
+            préparation de dossiers « vie privée et familiale », salarié, étudiant, soins, ainsi que les demandes de renouvellement.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Recours contre décisions :</span>
+            contestation des OQTF, refus de séjour, interdictions de retour, arrêtés préfectoraux devant le tribunal administratif.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Naturalisation :</span>
+            assistance pour le dépôt du dossier, préparation aux entretiens, rédaction de recours en cas d'ajournement ou de refus.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Contentieux administratifs :</span>
+            référés-suspension, référés-liberté, coordination avec les acteurs sociaux afin de sécuriser votre présence en France.
+          </li>
+        </ul>
+        <div class="mt-8 border-l-4 border-gold-500 bg-gold-50/60 p-6">
+          <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">
+            Recours contre un refus de nationalité française
+          </h3>
+          <p class="text-slate-700 leading-relaxed">
+            Suite au refus de votre demande de naturalisation, il n'est pas rare que la préfecture interdise tout nouveau dépôt.
+            Vous disposez d'un double recours : d'abord un recours hiérarchique auprès du Ministre de l'Intérieur, puis un recours administratif
+            devant le Tribunal Administratif de Nantes. Me du Rosel de Saint Germain prépare chaque étape (analyse de la motivation,
+            constitution des pièces, rédaction des mémoires) et vous assiste jusqu'à l'audience pour obtenir l'annulation de la décision.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Methodology Section -->
-  <section class="py-16 md:py-24 bg-slate-50">
+  <!-- DALO -->
+  <section class="py-16 md:py-20 bg-slate-50">
     <div class="container mx-auto px-4">
-      <div class="max-w-5xl mx-auto">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
-            Notre <span class="text-gold-500">méthode</span> de travail
-          </h2>
-          <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-            Une approche structurée pour garantir la meilleure défense de vos intérêts
-          </p>
-        </div>
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
+          <span class="text-gold-500">Droit au logement opposable (DALO)</span>
+        </h2>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Le DALO permet de faire reconnaître votre droit à un logement ou à un hébergement digne lorsque les démarches ordinaires ont échoué.
+          Le cabinet assure un suivi complet, de la commission de médiation au recours contentieux.
+        </p>
+        <ul class="mt-6 space-y-3 text-slate-700 leading-relaxed">
+          <li>
+            <span class="font-semibold text-slate-900">Constitution du dossier :</span>
+            analyse de votre situation familiale, collecte des justificatifs d'urgence et rédaction du recours DALO.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Suivi devant la commission :</span>
+            échanges avec les services de l'État, réponse aux demandes de pièces complémentaires, relances.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Recours contentieux :</span>
+            saisine du tribunal administratif en cas de rejet ou d'absence de relogement, jusqu'à l'exécution de la décision.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <div class="grid md:grid-cols-4 gap-8">
-          <div class="text-center">
-            <div class="w-16 h-16 bg-gold-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-              1
-            </div>
-            <h3 class="text-xl font-serif font-bold text-slate-900 mb-3">Écoute</h3>
-            <p class="text-slate-600">
-              Premier rendez-vous pour comprendre votre situation et analyser vos besoins
-            </p>
-          </div>
-          <div class="text-center">
-            <div class="w-16 h-16 bg-gold-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-              2
-            </div>
-            <h3 class="text-xl font-serif font-bold text-slate-900 mb-3">Analyse</h3>
-            <p class="text-slate-600">
-              Étude approfondie de votre dossier et élaboration d'une stratégie juridique adaptée
-            </p>
-          </div>
-          <div class="text-center">
-            <div class="w-16 h-16 bg-gold-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-              3
-            </div>
-            <h3 class="text-xl font-serif font-bold text-slate-900 mb-3">Action</h3>
-            <p class="text-slate-600">
-              Mise en œuvre de la stratégie avec rigueur et réactivité tout au long de la procédure
-            </p>
-          </div>
-          <div class="text-center">
-            <div class="w-16 h-16 bg-gold-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-              4
-            </div>
-            <h3 class="text-xl font-serif font-bold text-slate-900 mb-3">Suivi</h3>
-            <p class="text-slate-600">
-              Communication régulière et transparente jusqu'à la résolution de votre affaire
-            </p>
-          </div>
-        </div>
+  <!-- Droit civil -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
+          <span class="text-gold-500">Droit civil</span>
+        </h2>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Le droit civil encadre les relations du quotidien : contrats, voisinage, responsabilité. Me du Rosel de Saint Germain vous aide
+          à faire valoir vos droits et à prévenir les contentieux futurs.
+        </p>
+        <ul class="mt-6 space-y-3 text-slate-700 leading-relaxed">
+          <li>
+            <span class="font-semibold text-slate-900">Litiges contractuels :</span>
+            baux d'habitation, prestations de service, consommation, conflits de voisinage.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Responsabilité civile :</span>
+            réparation des dommages matériels ou corporels, expertises, négociation d'indemnisation.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-900">Recouvrement de créances :</span>
+            mise en demeure, injonction de payer, exécution forcée sur l'ensemble du territoire français.
+          </li>
+        </ul>
       </div>
     </div>
   </section>
