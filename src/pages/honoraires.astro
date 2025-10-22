@@ -1,0 +1,111 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { siteConfig } from '../config';
+
+const hourlyRateHT = 180;
+const hourlyRateTTC = 216;
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<Layout
+  title={`Honoraires - ${siteConfig.name} | Transparence et modalités`}
+  description={`Découvrez la politique d'honoraires de ${siteConfig.name} : taux horaire de ${hourlyRateHT} EUR HT (${hourlyRateTTC} EUR TTC), forfaits, convention et modalités de paiement.`}
+>
+  <section class="bg-gradient-to-br from-burgundy-900 to-burgundy-700 text-white py-16 md:py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">
+          Honoraires
+        </h1>
+        <p class="text-xl text-gold-100">
+          Transparence, prévisibilite et accompagnement sur mesure
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto space-y-8 text-slate-700 leading-relaxed">
+        <div>
+          <h2 class="text-3xl font-serif font-bold text-slate-900 mb-4">
+            Taux horaire de reference
+          </h2>
+          <p>
+            L'intervention du cabinet est facturee sur la base d'un taux horaire de <strong>{hourlyRateHT} EUR HT</strong>, soit <strong>{hourlyRateTTC} EUR TTC</strong>. Ce taux couvre le temps consacre a votre dossier (rendez-vous, analyse juridique, redaction de conclusions, plaidoirie et suivi post-decision).
+          </p>
+          <p class="mt-4">
+            Le temps passe est comptabilise par tranche de quinze minutes afin de refléter au plus juste la realite du travail accompli, que ce soit au cabinet, a distance ou devant les juridictions.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-serif font-bold text-slate-900 mb-4">
+            Forfaits et conventions d'honoraires
+          </h2>
+          <p>
+            Chaque mission donne lieu a une convention d'honoraires ecrite, signee apres un premier rendez-vous de cadrage. Selon la nature de votre dossier, plusieurs formules peuvent etre proposees :
+          </p>
+          <ul class="mt-4 space-y-3 pl-5 list-disc">
+            <li>
+              <strong>Forfait</strong> pour les procedures a enjeu delimite (ex. divorce par consentement mutuel, depot de dossier DALO, recours OQTF simple).
+            </li>
+            <li>
+              <strong>Taux horaire</strong> pour les dossiers evolutifs ou lorsque l'ampleur du contentieux ne permet pas d'anticiper la charge de travail.
+            </li>
+            <li>
+              <strong>Honoraire de resultat</strong> (complementaire au forfait ou au taux horaire) lorsque la loi l'autorise et que l'objectif financier le justifie. Il est toujours couple a un honoraire fixe.
+            </li>
+          </ul>
+          <p class="mt-4">
+            La premiere consultation permet de comprendre vos objectifs, de valider la strategie et de fixer la formule la plus adaptee. La convention d'honoraires formalise ensuite les honoraires, les depens et les frais eventuels.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-serif font-bold text-slate-900 mb-4">
+            Modalites de paiement
+          </h2>
+          <ul class="space-y-3 pl-5 list-disc">
+            <li>Reglement possible par virement bancaire, cheque ou carte bancaire (terminal disponible au cabinet).</li>
+            <li>Echeancier en plusieurs versements lorsque la procedure s'etale dans le temps, sous reserve de validation prealable.</li>
+            <li>Facturation mensuelle ou a chaque etape cle (introduction, audience, jugement) selon la convention d'honoraires.</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-6">
+          <h2 class="text-2xl font-serif font-bold text-slate-900 mb-3">
+            Assurance protection juridique & aide juridictionnelle
+          </h2>
+          <p>
+            Verifiez si vous beneficiez d'une assurance protection juridique : elle peut prendre en charge tout ou partie des honoraires. Le cabinet vous aide a constituer le dossier et se coordonne avec votre assureur.
+          </p>
+          <p class="mt-3">
+            Les dossiers relevant de l'aide juridictionnelle sont etudies au cas par cas. Lorsque les conditions sont reunies, Me du Rosel de Saint Germain vous accompagne dans les demarches de demande.
+          </p>
+        </div>
+
+        <div class="bg-gold-50/80 border border-gold-200 rounded-xl p-6">
+          <h2 class="text-2xl font-serif font-bold text-slate-900 mb-3">
+            Première consultation
+          </h2>
+          <p>
+            La premiere consultation au cabinet ou en visio est facturee <strong>{hourlyRateHT} EUR HT</strong> (soit {hourlyRateTTC} EUR TTC) et comprend l'analyse initiale de votre situation ainsi que la definition d'un plan d'action personnalise.
+          </p>
+          <p class="mt-3">
+            Si vous decidez de confier la suite du dossier au cabinet, ce montant est integre dans la convention d'honoraires.
+          </p>
+        </div>
+
+        <div class="text-center pt-4">
+          <a
+            href={`${baseUrl}contact`}
+            class="inline-block bg-burgundy-900 hover:bg-burgundy-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors shadow-lg"
+          >
+            Prendre rendez-vous
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
