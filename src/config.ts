@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Maître Ambre Du Rosel De Saint Germain",
+  name: "Maître Ambre du Rosel de Saint Germain",
   title: "Cabinet d'Avocat",
   description: "Cabinet d'avocat spécialisé en droit de la famille, droit pénal et droit des sociétés, avocat paris, cabinet d'avocats, conseil juridique, droit du travail, droit de la famille, droit des sociétés, avocat france, assistance juridique",
 

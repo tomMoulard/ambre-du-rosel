@@ -5,8 +5,8 @@ const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout
-  title="Mentions Légales | Maître Ambre Du Rosel De Saint Germain - Avocat Paris"
-  description="Mentions légales du cabinet de Maître Ambre Du Rosel De Saint Germain, avocat au Barreau de Paris."
+  title=`Mentions Légales | ${siteConfig.name} - Avocat Paris`
+  description=`Mentions légales du cabinet de ${siteConfig.name}, avocat au Barreau de Paris.`
 >
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-slate-900 to-burgundy-900 text-white py-16 md:py-20">
@@ -33,7 +33,7 @@ const baseUrl = import.meta.env.BASE_URL;
             Éditeur du site
           </h2>
           <div class="bg-slate-50 rounded-lg p-6">
-            <p class="mb-2"><strong>Maître Ambre Du Rosel De Saint Germain</strong></p>
+            <p class="mb-2"><strong>{siteConfig.name}</strong></p>
             <p class="mb-2">Avocat au Barreau de Paris</p>
             <p class="mb-2">{siteConfig.contact.address.street}</p>
             <p class="mb-2">{siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}, {siteConfig.contact.address.country}</p>
@@ -82,9 +82,9 @@ const baseUrl = import.meta.env.BASE_URL;
           </h2>
           <div class="bg-slate-50 rounded-lg p-6">
             <p class="mb-2"><strong>Tom Moulard</strong></p>
-						<p class="mb-2"><strong>Site web :</strong>
-							<a href="https://tom.moulard.org" class="text-gold-600 hover:text-gold-700">https://tom.moulard.org</a>
-						</p>
+            <p class="mb-2"><strong>Site web :</strong>
+              <a href="https://tom.moulard.org" class="text-gold-600 hover:text-gold-700">https://tom.moulard.org</a>
+            </p>
           </div>
         </div>
 
@@ -114,7 +114,7 @@ const baseUrl = import.meta.env.BASE_URL;
             de rectification, de suppression et d'opposition aux données personnelles vous concernant.
           </p>
           <p class="text-slate-700 leading-relaxed mb-4">
-            <strong>Responsable du traitement :</strong> Maître Ambre Du Rosel De Saint Germain
+            <strong>Responsable du traitement :</strong> {siteConfig.name}
           </p>
           <p class="text-slate-700 leading-relaxed mb-4">
             Les données collectées via les formulaires de contact sont destinées exclusivement à l'usage du cabinet pour le traitement
@@ -122,7 +122,7 @@ const baseUrl = import.meta.env.BASE_URL;
           </p>
           <p class="text-slate-700 leading-relaxed mb-4">
             Pour exercer vos droits, vous pouvez adresser votre demande par email à :
-						<a href=`mailto:${siteConfig.contact.email}` class="text-gold-600 hover:text-gold-700">{siteConfig.contact.email}</a>
+            <a href=`mailto:${siteConfig.contact.email}` class="text-gold-600 hover:text-gold-700">{siteConfig.contact.email}</a>
             ou par courrier à l'adresse du cabinet.
           </p>
           <p class="text-slate-700 leading-relaxed">
@@ -152,7 +152,7 @@ const baseUrl = import.meta.env.BASE_URL;
             Liens hypertextes
           </h2>
           <p class="text-slate-700 leading-relaxed">
-            Le site peut contenir des liens vers d'autres sites. Maître Ambre Du Rosel De Saint Germain ne saurait être tenue responsable du contenu
+            Le site peut contenir des liens vers d'autres sites. {siteConfig.name} ne saurait être tenue responsable du contenu
             de ces sites externes. L'existence d'un lien vers un autre site ne constitue pas une validation de ce site ou de son contenu.
           </p>
         </div>
@@ -163,7 +163,7 @@ const baseUrl = import.meta.env.BASE_URL;
             Limitation de responsabilité
           </h2>
           <p class="text-slate-700 leading-relaxed mb-4">
-            Les informations contenues sur ce site sont aussi précises que possible. Toutefois, Maître Ambre Du Rosel De Saint Germain ne pourra être
+            Les informations contenues sur ce site sont aussi précises que possible. Toutefois, {siteConfig.name} ne pourra être
             tenue responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou
             du fait des tiers partenaires qui lui fournissent ces informations.
           </p>
@@ -198,7 +198,7 @@ const baseUrl = import.meta.env.BASE_URL;
   <!-- Back to Home -->
   <section class="py-12 bg-slate-50">
     <div class="container mx-auto px-4 text-center">
-			<a href=`${baseUrl}` class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors">
+      <a href=`${baseUrl}` class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors">
         Retour à l'accueil
       </a>
     </div>

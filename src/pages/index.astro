@@ -8,8 +8,8 @@ const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout
-  title="Maître Ambre Du Rosel De Saint Germain - Avocat à Paris | Droit de la famille, Pénal & Sociétés"
-  description="Cabinet d'avocat à Paris spécialisé en droit de la famille, droit pénal et droit des sociétés. Maître Ambre Du Rosel De Saint Germain vous accompagne avec expertise et dévouement."
+  title=`${siteConfig.name} - Avocat à Paris | Droit de la famille, Pénal & Sociétés`
+  description=`Cabinet d'avocat à Paris spécialisé en droit de la famille, droit pénal et droit des sociétés. ${siteConfig.name} vous accompagne avec expertise et dévouement.`
 >
   <!-- Hero Section -->
   <section class="relative bg-gradient-to-br from-burgundy-900 via-burgundy-800 to-burgundy-950 text-white py-24 md:py-32">
@@ -42,7 +42,7 @@ const baseUrl = import.meta.env.BASE_URL;
           <div>
             <Image
               src={profileImage}
-              alt="Maître Ambre Du Rosel De Saint Germain"
+              alt={siteConfig.name}
               width={600}
               height={800}
               class="rounded-lg shadow-xl w-full"
