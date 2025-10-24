@@ -1,30 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-burgundy-50: #fdf4f4;
-  --color-burgundy-100: #fbe8e8;
-  --color-burgundy-200: #f7d5d5;
-  --color-burgundy-300: #f0b3b3;
-  --color-burgundy-400: #e68888;
-  --color-burgundy-500: #d65d5d;
-  --color-burgundy-600: #c14040;
-  --color-burgundy-700: #9f2e2e;
-  --color-burgundy-800: #852929;
-  --color-burgundy-900: #6f2727;
-  --color-burgundy-950: #3c1111;
+  --color-burgundy-50: #fadfaa;
+  --color-burgundy-100: #f5de9f;
+  --color-burgundy-200: #f5de9f;
+  --color-burgundy-300: #bf934f;
+  --color-burgundy-400: #bf934f;
+  --color-burgundy-500: #bf934f;
+  --color-burgundy-600: #5a2537;
+  --color-burgundy-700: #5a2537;
+  --color-burgundy-800: #34111d;
+  --color-burgundy-900: #34111d;
+  --color-burgundy-950: #34111d;
 
-  --color-gold-50: #fefbec;
-  --color-gold-100: #fbf4c9;
-  --color-gold-200: #f8e88e;
-  --color-gold-300: #f5d753;
-  --color-gold-400: #f2c62c;
-  --color-gold-500: #e2a918;
-  --color-gold-600: #c68212;
-  --color-gold-700: #9d5c12;
-  --color-gold-800: #824916;
-  --color-gold-900: #6f3c18;
-  --color-gold-950: #411f0a;
+  --color-gold-50: #fadfaa;
+  --color-gold-100: #f5de9f;
+  --color-gold-200: #f5de9f;
+  --color-gold-300: #f5de9f;
+  --color-gold-400: #bf934f;
+  --color-gold-500: #bf934f;
+  --color-gold-600: #bf934f;
+  --color-gold-700: #bf934f;
+  --color-gold-800: #bf934f;
+  --color-gold-900: #bf934f;
+  --color-gold-950: #bf934f;
 
-  --font-serif: 'Cormorant Garamond', serif;
+  --font-serif: 'Playfair Display', serif;
   --font-sans: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif !important;
 }
