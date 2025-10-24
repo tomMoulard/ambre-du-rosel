@@ -20,7 +20,7 @@ const baseUrl = import.meta.env.BASE_URL;
           Défendre vos droits avec <span class="text-gold-400">excellence</span> et <span class="text-gold-400">engagement</span>
         </h1>
         <p class="text-xl md:text-2xl text-slate-200 mb-8 leading-relaxed">
-          Cabinet implanté à Taverny (Val d'Oise) dédié au droit pénal, au droit de la famille, au droit des étrangers, au DALO et au droit civil
+          Cabinet implanté à Taverny (Val d'Oise) dédié au droit pénal, aux assistances éducatives, au droit de la famille, au droit des étrangers, au DALO et au droit civil
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href={`${baseUrl}contact`} class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
@@ -54,10 +54,10 @@ const baseUrl = import.meta.env.BASE_URL;
               Une <span class="text-gold-500">avocate</span> à votre écoute
             </h2>
             <p class="text-lg text-slate-700 mb-4 leading-relaxed">
-              Titulaire d'un Master II en droit privé général de l'Université CY Cergy Paris Université et avocate au Barreau du Val d'Oise depuis 2022, je défends chaque justiciable avec empathie et détermination.
+              Titulaire d'un Master II en droit privé général de l'Université CY Cergy Paris Université et avocate au Barreau du Val d'Oise depuis 2022, {siteConfig.name} défends chaque justiciable avec empathie et détermination.
             </p>
             <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-              Maître du Rosel de Saint Germain intervient sur rendez-vous à Taverny, à deux pas de la gare, et vous accompagne sur tout le territoire en droit pénal, droit de la famille, droit des étrangers, DALO et droit civil.
+              Maître du Rosel de Saint Germain intervient sur rendez-vous à Taverny, à deux pas de la gare, et vous accompagne sur tout le territoire en droit pénal, assistances éducatives, droit de la famille, droit des étrangers, DALO et droit civil.
             </p>
             <a href={`${baseUrl}a-propos`} class="inline-block text-gold-600 hover:text-gold-700 font-semibold text-lg border-b-2 border-gold-600 hover:border-gold-700 transition-colors">
               En savoir plus sur mon parcours →
@@ -93,15 +93,39 @@ const baseUrl = import.meta.env.BASE_URL;
             <ul class="space-y-2 text-slate-700">
               <li class="flex items-start">
                 <span class="text-gold-500 mr-2">•</span>
-                <span>Gardes à vue et déferrements</span>
+                <span>Gardes à vue et défèrement</span>
               </li>
               <li class="flex items-start">
                 <span class="text-gold-500 mr-2">•</span>
-                <span>Comparutions immédiates et criminelles</span>
+                <span>Audiences correctionnelles et cours d'assises</span>
               </li>
               <li class="flex items-start">
                 <span class="text-gold-500 mr-2">•</span>
                 <span>Assistance des victimes et mis en cause</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Assistances éducatives -->
+          <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <svg class="w-8 h-8 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-4 text-center">Assistances éducatives</h3>
+            <ul class="space-y-2 text-slate-700">
+              <li class="flex items-start">
+                <span class="text-gold-500 mr-2">•</span>
+                <span>Préparation du dossier avant l'audience</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gold-500 mr-2">•</span>
+                <span>Assistance des parents et des enfants</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gold-500 mr-2">•</span>
+                <span>Suivi de la mesure d'assistance éducative</span>
               </li>
             </ul>
           </div>

@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
 import { siteConfig } from '../config';
+import plaidoyerImage from '../../public/images/plaidoyer.jpg';
+import parlerImage from '../../public/images/parler.jpg';
 
 const baseUrl = import.meta.env.BASE_URL;
 ---
@@ -26,30 +29,76 @@ const baseUrl = import.meta.env.BASE_URL;
   <!-- Droit pénal -->
   <section class="py-16 md:py-20 bg-white">
     <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <Image
+              src={plaidoyerImage}
+              alt=`${siteConfig.name} en plaidoirie`
+              width={600}
+              height={800}
+              class="rounded-lg shadow-xl w-full"
+              loading="lazy"
+            />
+            <p class="text-center text-sm text-slate-600 mt-4 italic">
+              Maître du Rosel de Saint Germain lors du concours de la Conférence — Photo : Cyril CORNET
+            </p>
+          </div>
+          <div>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
+              <span class="text-gold-500">Droit pénal</span>
+            </h2>
+            <p class="text-lg text-slate-700 leading-relaxed">
+              Membre du groupe de défense pénale et criminelle, {siteConfig.name} intervient en urgence pour toute situation pénale.
+              Disponibilité 24h/24 en garde à vue, réactivité lors des défèrements ou comparutions immédiates, accompagnement des victimes comme des mis en cause.
+            </p>
+            <ul class="mt-6 space-y-3 text-slate-700 leading-relaxed">
+              <li>
+                <span class="font-semibold text-slate-900">Gardes à vue :</span>
+                présence dès la première heure, préparation aux interrogatoires, échanges avec la famille.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Audiences pénales :</span>
+                défense devant le tribunal correctionnel, la cour d'assises, le juge des enfants ou d'application des peines, demandes d'aménagement de peine.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Urgences :</span>
+                comparutions immédiates, débat de placement en détention provisoire,  ouvertures d'informations, instructions délictuelles et criminelles,  commissions de discipline en maison d'arrêt, permanences week-end et nuit.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Droits des victimes :</span>
+                dépôt de plainte, constitution de partie civile, chiffrage des préjudices et suivi de l'indemnisation.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assistances éducatives -->
+  <section class="py-16 md:py-20 bg-slate-50">
+    <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
-          <span class="text-gold-500">Droit pénal</span>
+          <span class="text-gold-500">Assistances éducatives</span>
         </h2>
         <p class="text-lg text-slate-700 leading-relaxed">
-          Membre du groupe de défense pénale et criminelle, Me du Rosel de Saint Germain intervient en urgence pour toute situation pénale.
-          Disponibilité 24h/24 en garde à vue, réactivité lors des déferrements ou comparutions immédiates, accompagnement des victimes comme des mis en cause.
+          Le cabinet accompagne les familles confrontées à des mesures d'assistance éducative avec écoute et réactivité.
+          L'objectif : défendre au mieux les intérêts de chacun et préserver les liens familiaux.
         </p>
         <ul class="mt-6 space-y-3 text-slate-700 leading-relaxed">
           <li>
-            <span class="font-semibold text-slate-900">Gardes à vue & auditions :</span>
-            présence dès la première heure, préparation aux interrogatoires, échanges avec la famille.
+            <span class="font-semibold text-slate-900">Préparation du dossier avant l'audience :</span>
+            analyse de la situation familiale, collecte des pièces justificatives et élaboration de la stratégie de défense.
           </li>
           <li>
-            <span class="font-semibold text-slate-900">Audience pénale :</span>
-            défense devant le tribunal correctionnel, la cour d'assises, le juge des enfants ou d'application des peines, demandes d'aménagement de peine.
+            <span class="font-semibold text-slate-900">Assistance des parents, des enfants ou des tiers de confiance :</span>
+            représentation lors des audiences devant le juge des enfants, défense des droits de chaque partie prenante.
           </li>
           <li>
-            <span class="font-semibold text-slate-900">Urgences criminelles :</span>
-            comparutions immédiates, commissions de discipline en maison d'arrêt, permanences week-end et nuit.
-          </li>
-          <li>
-            <span class="font-semibold text-slate-900">Droits des victimes :</span>
-            dépôt de plainte, constitution de partie civile, chiffrage des préjudices et suivi de l'indemnisation.
+            <span class="font-semibold text-slate-900">Suivi tout au long de la mesure d'assistance éducative :</span>
+            accompagnement continu, demandes de mainlevée ou de modification des mesures, coordination avec les services sociaux.
           </li>
         </ul>
       </div>
@@ -57,40 +106,57 @@ const baseUrl = import.meta.env.BASE_URL;
   </section>
 
   <!-- Droit de la famille -->
-  <section class="py-16 md:py-20 bg-slate-50">
+  <section class="py-16 md:py-20 bg-white">
     <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
-          <span class="text-gold-500">Droit de la famille</span>
-        </h2>
-        <p class="text-lg text-slate-700 leading-relaxed">
-          Le cabinet vous accompagne dans chaque étape familiale avec humanité. L'objectif : sécuriser vos liens et construire des solutions pérennes,
-          qu'elles soient amiables ou judiciaires.
-        </p>
-        <ul class="mt-6 space-y-3 text-slate-700 leading-relaxed">
-          <li>
-            <span class="font-semibold text-slate-900">Procédures de divorce :</span>
-            divorce par consentement mutuel, divorce contentieux, séparation de corps, liquidation du régime matrimonial.
-          </li>
-          <li>
-            <span class="font-semibold text-slate-900">Mesures hors mariage :</span>
-            saisine du juge aux affaires familiales pour les couples non mariés, fixation de la résidence des enfants et des droits de visite.
-          </li>
-          <li>
-            <span class="font-semibold text-slate-900">Protection des enfants :</span>
-            pension alimentaire, autorité parentale conjointe ou exclusive, ordonnances de protection, médiation familiale.
-          </li>
-          <li>
-            <span class="font-semibold text-slate-900">Patrimoine & transmissions :</span>
-            partage de biens, successions conflictuelles, assistance devant notaire.
-          </li>
-        </ul>
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
+              <span class="text-gold-500">Droit de la famille</span>
+            </h2>
+            <p class="text-lg text-slate-700 leading-relaxed">
+              Le cabinet vous accompagne dans chaque étape familiale avec humanité. L'objectif : sécuriser vos liens et construire des solutions pérennes,
+              qu'elles soient amiables ou judiciaires.
+            </p>
+            <ul class="mt-6 space-y-3 text-slate-700 leading-relaxed">
+              <li>
+                <span class="font-semibold text-slate-900">Procédures de divorce :</span>
+                divorce par consentement mutuel, divorce contentieux, séparation de corps, liquidation du régime matrimonial.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Mesures hors mariage :</span>
+                saisine du juge aux affaires familiales pour les couples non mariés, fixation de la résidence des enfants et des droits de visite.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Protection des enfants :</span>
+                pension alimentaire, autorité parentale conjointe ou exclusive, ordonnances de protection, médiation familiale.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Patrimoine & transmissions :</span>
+                partage de biens, successions conflictuelles, assistance devant notaire.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <Image
+              src={parlerImage}
+              alt=`${siteConfig.name} en plaidoirie`
+              width={600}
+              height={800}
+              class="rounded-lg shadow-xl w-full"
+              loading="lazy"
+            />
+            <p class="text-center text-sm text-slate-600 mt-4 italic">
+              Maître du Rosel de Saint Germain lors du concours de la Conférence — Photo : Cyril CORNET
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Droit des étrangers -->
-  <section class="py-16 md:py-20 bg-white">
+  <section class="py-16 md:py-20 bg-slate-50">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
@@ -113,28 +179,13 @@ const baseUrl = import.meta.env.BASE_URL;
             <span class="font-semibold text-slate-900">Naturalisation :</span>
             assistance pour le dépôt du dossier, préparation aux entretiens, rédaction de recours en cas d'ajournement ou de refus.
           </li>
-          <li>
-            <span class="font-semibold text-slate-900">Contentieux administratifs :</span>
-            référés-suspension, référés-liberté, coordination avec les acteurs sociaux afin de sécuriser votre présence en France.
-          </li>
         </ul>
-        <div class="mt-8 border-l-4 border-gold-500 bg-gold-50/60 p-6">
-          <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">
-            Recours contre un refus de nationalité française
-          </h3>
-          <p class="text-slate-700 leading-relaxed">
-            Suite au refus de votre demande de naturalisation, il n'est pas rare que la préfecture interdise tout nouveau dépôt.
-            Vous disposez d'un double recours : d'abord un recours hiérarchique auprès du Ministre de l'Intérieur, puis un recours administratif
-            devant le Tribunal Administratif de Nantes. Me du Rosel de Saint Germain prépare chaque étape (analyse de la motivation,
-            constitution des pièces, rédaction des mémoires) et vous assiste jusqu'à l'audience pour obtenir l'annulation de la décision.
-          </p>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- DALO -->
-  <section class="py-16 md:py-20 bg-slate-50">
+  <section class="py-16 md:py-20 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
@@ -163,7 +214,7 @@ const baseUrl = import.meta.env.BASE_URL;
   </section>
 
   <!-- Droit civil -->
-  <section class="py-16 md:py-20 bg-white">
+  <section class="py-16 md:py-20 bg-slate-50">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
