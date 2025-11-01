@@ -5,7 +5,7 @@ export const siteConfig = {
 
   contact: {
     phone: "+33 7 60 30 32 31",
-    email: "contact@ambre-dubois-avocat.fr",
+    email: "ambre@du-rosel-de-saint-germain-avocate.fr",
     address: {
       street: "1 Rue Pasteur",
       city: "Taverny",

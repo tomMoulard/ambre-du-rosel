@@ -7,8 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://tommoulard.github.io',
-  base: '/ambre-du-rosel/',
+  site: 'https://du-rosel-de-saint-germain-avocate.fr',
   vite: {
     plugins: [tailwindcss()]
   },
